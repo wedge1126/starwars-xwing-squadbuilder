@@ -20,25 +20,30 @@ h1 {
 body {
   background-color: black;
   color: white;
+  font-size: 1.1em;
 }
 
-.ships-panel {
+.panel {
   border: solid 1px var(--star-wars-yellow);
   border-radius: 15px;
   padding: 10px;
-  width: 30%;
-  max-width: 300px;
-  min-width: 200px;
   height: calc(100vh - 100px);
 }
 
-.pilot-list {
+.ships-panel {
+  width: calc(30% - 5px);
+  float: left;
+  margin-right: 5px;
+}
 
+.pilot-list {
+  padding-bottom: 0.5em;
 }
 
 .pilot-list-ship-type {
   font-style: italic;
   font-size: 1.1em;
+  color: darkgray;
 }
 
 .pilot-list-pilots {
@@ -47,6 +52,7 @@ body {
 
 .pilot-list-item {
   width: 100%;
+  padding-top: 0.2em;
 }
 
 .pilot-list-item-name {
@@ -55,12 +61,40 @@ body {
 
 .pilot-list-item-cost {
   width: 4em;
-  /* border: solid 1px red; */
   float: right;
 }
 
 .pilot-list-item-add {
   margin-left: 1em;
+}
+
+.squad-panel {
+  float: left;
+  width: 70%;
+}
+
+.ship-card {
+  border: solid 1px gray;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.ship-card-header {
+
+}
+
+.ship-card-initiative {
+  color: orange;
+  font-weight: bold;
+}
+
+.ship-card-pilot-name {
+
+}
+
+.ship-card-point-cost {
+  color: lightskyblue;
 }
 
 @font-face {

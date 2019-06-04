@@ -177,6 +177,56 @@
             {
                 "faction": "Rebel Alliance",
                 "type": "BTL-A4 Y-Wing",
+                "pilot": "Gray Squadron Bomber",
+                "unique": false,
+                "initiative": 2,
+                "attack": 2,
+                "agility": 1,
+                "hull": 6,
+                "shields": 2,
+                "points": 31,
+                "actions": [
+                    { 
+                        "name": "focus",
+                        "difficulty": "white"
+                    },
+                    { 
+                        "name": "target_lock",
+                        "difficulty": "white"
+                    },
+                    { 
+                        "name": "barrel_roll",
+                        "difficulty": "red"
+                    },
+                    {
+                        "name": "reload",
+                        "difficulty": "red"
+                    }
+                ],
+                "upgrades": [
+                    {
+                        "type": "turret"
+                    },
+                    {
+                        "type": "torpedo"
+                    },
+                    {
+                        "type": "astromech"
+                    },
+                    {
+                        "type": "device"
+                    },
+                    {
+                        "type": "modification"
+                    },
+                    {
+                        "type": "gunner"
+                    }
+                ]
+            },
+            {
+                "faction": "Rebel Alliance",
+                "type": "BTL-A4 Y-Wing",
                 "pilot": "Gold Squadron Veteran",
                 "unique": false,
                 "initiative": 3,
@@ -260,56 +310,6 @@
                     {
                         "type": "talent"
                     },
-                    {
-                        "type": "turret"
-                    },
-                    {
-                        "type": "torpedo"
-                    },
-                    {
-                        "type": "astromech"
-                    },
-                    {
-                        "type": "device"
-                    },
-                    {
-                        "type": "modification"
-                    },
-                    {
-                        "type": "gunner"
-                    }
-                ]
-            },
-            {
-                "faction": "Rebel Alliance",
-                "type": "BTL-A4 Y-Wing",
-                "pilot": "Gray Squadron Bomber",
-                "unique": false,
-                "initiative": 2,
-                "attack": 2,
-                "agility": 1,
-                "hull": 6,
-                "shields": 2,
-                "points": 31,
-                "actions": [
-                    { 
-                        "name": "focus",
-                        "difficulty": "white"
-                    },
-                    { 
-                        "name": "target_lock",
-                        "difficulty": "white"
-                    },
-                    { 
-                        "name": "barrel_roll",
-                        "difficulty": "red"
-                    },
-                    {
-                        "name": "reload",
-                        "difficulty": "red"
-                    }
-                ],
-                "upgrades": [
                     {
                         "type": "turret"
                     },
