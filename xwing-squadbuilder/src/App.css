@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  /* border: solid 1px red; */
+}
+
+@font-face {
+  font-family: 'StarJedi Special Edition';
+  src: local('StarJedi Special Edition'),
+    url('./fonts/STJEDISE.TTF') format('truetype')
+}
+
+@font-face {
+  font-family: 'Distant Galaxy';
+  src: local('Distant Galaxy'),
+    url('./fonts/SFDistantGalaxy.ttf') format('truetype')
+}
+
+h1 {
+  /* font-family: 'StarJedi Special Edition'; */
+  font-family: 'Distant Galaxy';
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.pilot-list-pilots {
+  padding-left: 1.5em;
+}
