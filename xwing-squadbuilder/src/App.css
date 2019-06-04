@@ -33,7 +33,7 @@ body {
 
 .ships-panel {
   width: calc(35% - 5px);
-  max-width: 400px;
+  max-width: 350px;
   float: left;
   margin-right: 5px;
 }
@@ -73,7 +73,7 @@ body {
 .squad-panel {
   float: left;
   width: 65%;
-  max-width: 800px;
+  max-width: 700px;
 }
 
 .ship-card {
@@ -86,7 +86,7 @@ body {
   border-bottom: solid 1px gray;
   padding: 5px;
   display: grid;
-  grid-template-columns: 5em auto 30% 3em;
+  grid-template-columns: 3em 50% auto 3em;
   font-size: 1.2em;
 }
 
@@ -94,6 +94,7 @@ body {
   color: orange;
   font-weight: bold;
   text-align: center;
+  font-size: 1.1em;
 }
 
 .ship-card-pilot-name {

@@ -14,7 +14,7 @@ export default class ShipCard extends React.Component {
                     {ship.pilot}
                 </div>
                 <div className="ship-card-point-cost">
-                    {ship.points}
+                    ({ship.points})
                 </div>
                 <div className="ship-card-remove">
                     <FontAwesomeIcon icon={faTimes} />
