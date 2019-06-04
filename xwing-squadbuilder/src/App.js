@@ -3,17 +3,18 @@ import './App.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { 
   faPlus as fasPlus,
-  faMeteor as attack,
-  faShare as agility,
-  faTh as hull,
-  faFutbol as shield,
-  faJedi as force
+  faMeteor as fasMeteor,
+  faShare as fasShare,
+  faTh as fasTh,
+  faFutbol as fasFutbol,
+  faJedi as fasJedi,
+  faTimes as fasTimes
 } from '@fortawesome/free-solid-svg-icons';
 import rebelShips from './data/rebel-ships.json'
 import ShipsPanel from './ShipsPanel';
 import SquadPanel from './SquadPanel';
 
-library.add(fasPlus, attack, agility, hull, shield, force);
+library.add(fasPlus, fasMeteor, fasShare, fasTh, fasFutbol, fasJedi, fasTimes);
 
 export default class App extends React.Component {
   render() {

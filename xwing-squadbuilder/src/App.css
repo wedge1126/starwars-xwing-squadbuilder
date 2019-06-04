@@ -9,6 +9,7 @@
 
 .App {
   margin: 20px;
+  
 }
 
 h1 {
@@ -26,12 +27,13 @@ body {
 .panel {
   border: solid 1px var(--star-wars-yellow);
   border-radius: 15px;
-  padding: 10px;
+  padding: 15px;
   height: calc(100vh - 100px);
 }
 
 .ships-panel {
-  width: calc(30% - 5px);
+  width: calc(35% - 5px);
+  max-width: 400px;
   float: left;
   margin-right: 5px;
 }
@@ -70,31 +72,69 @@ body {
 
 .squad-panel {
   float: left;
-  width: 70%;
+  width: 65%;
+  max-width: 800px;
 }
 
 .ship-card {
   border: solid 1px gray;
-  padding: 5px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
 .ship-card-header {
-
+  border-bottom: solid 1px gray;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 5em auto 30% 3em;
+  font-size: 1.2em;
 }
 
 .ship-card-initiative {
   color: orange;
   font-weight: bold;
+  text-align: center;
 }
 
 .ship-card-pilot-name {
-
+  padding-left: 0.2em;
 }
 
 .ship-card-point-cost {
   color: lightskyblue;
+}
+
+.ship-card-remove {
+  color: red;
+  text-align: center;
+}
+
+.ship-card-body {
+  padding: 5px;
+}
+
+.stat {
+  padding-right: 1em;
+}
+
+.ship-card-stats-attack {
+  color: firebrick;
+}
+
+.ship-card-stats-agility {
+  color: forestgreen;
+}
+
+.ship-card-stats-hull {
+  color: gold;
+}
+
+.ship-card-stats-shields {
+  color: skyblue;
+}
+
+.ship-card-stats-force {
+  color: purple;
 }
 
 @font-face {
