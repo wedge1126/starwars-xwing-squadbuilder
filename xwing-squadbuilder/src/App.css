@@ -3,6 +3,66 @@
   /* border: solid 1px red; */
 }
 
+:root {
+  --star-wars-yellow: rgb(249,215,28);
+}
+
+.App {
+  margin: 20px;
+}
+
+h1 {
+  /* font-family: 'StarJedi Special Edition'; */
+  font-family: 'Distant Galaxy';
+  color: var(--star-wars-yellow);
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.ships-panel {
+  border: solid 1px var(--star-wars-yellow);
+  border-radius: 15px;
+  padding: 10px;
+  width: 30%;
+  max-width: 300px;
+  min-width: 200px;
+  height: calc(100vh - 100px);
+}
+
+.pilot-list {
+
+}
+
+.pilot-list-ship-type {
+  font-style: italic;
+  font-size: 1.1em;
+}
+
+.pilot-list-pilots {
+  padding-left: 1.5em;
+}
+
+.pilot-list-item {
+  width: 100%;
+}
+
+.pilot-list-item-name {
+
+}
+
+.pilot-list-item-cost {
+  width: 4em;
+  /* border: solid 1px red; */
+  float: right;
+}
+
+.pilot-list-item-add {
+  margin-left: 1em;
+}
+
 @font-face {
   font-family: 'StarJedi Special Edition';
   src: local('StarJedi Special Edition'),
@@ -13,18 +73,4 @@
   font-family: 'Distant Galaxy';
   src: local('Distant Galaxy'),
     url('./fonts/SFDistantGalaxy.ttf') format('truetype')
-}
-
-h1 {
-  /* font-family: 'StarJedi Special Edition'; */
-  font-family: 'Distant Galaxy';
-}
-
-body {
-  background-color: black;
-  color: white;
-}
-
-.pilot-list-pilots {
-  padding-left: 1.5em;
 }
