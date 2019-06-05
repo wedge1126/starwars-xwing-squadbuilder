@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMeteor, faShare, faTh, faFutbol, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faMeteor, faShare, faTh, faFutbol, faTimes, faJedi } from '@fortawesome/free-solid-svg-icons';
 
 export default class ShipCard extends React.Component {
     render() {
@@ -10,8 +10,13 @@ export default class ShipCard extends React.Component {
                 <div className="ship-card-initiative">
                     {ship.initiative}
                 </div>
-                <div className="ship-card-pilot-name">
-                    {ship.pilot}
+                <div>
+                    <span className="ship-card-pilot-name">
+                        {ship.pilot}
+                    </span>
+                    <span className="ship-card-ship-type">
+                        {ship.type}
+                    </span>
                 </div>
                 <div className="ship-card-point-cost">
                     ({ship.points})
@@ -34,6 +39,11 @@ export default class ShipCard extends React.Component {
                     <span className="stat ship-card-stats-shields">
                         <FontAwesomeIcon icon={faFutbol} /> {ship.shields}
                     </span>
+                    {ship.force && 
+                        <span className="stat ship-card-stats-force">
+                            <FontAwesomeIcon icon={faJedi} /> {ship.force}
+                        </span> 
+                    }
                 </div>
             </div>
         </div>

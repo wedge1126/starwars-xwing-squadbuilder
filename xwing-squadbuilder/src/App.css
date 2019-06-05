@@ -5,6 +5,7 @@
 
 :root {
   --star-wars-yellow: rgb(249,215,28);
+  --dark-gray: rgb(45,45,45);
 }
 
 .App {
@@ -24,12 +25,23 @@ body {
   font-size: 1.1em;
 }
 
+input {
+  background-color: var(--dark-gray);
+  color: white;
+  border-style: none;
+  font-size: inherit;
+}
+
+.label {
+  padding-right: 0.5em;
+}
+
 .button {
   cursor: pointer;
 }
 
 .disabled {
-  color: rgb(80, 80, 80);
+  color: gray;
 }
 
 .hidden {
@@ -60,7 +72,8 @@ body {
   display: grid;
   grid-template-columns: auto 2em;
   cursor: pointer;
-  background-color: rgb(46, 46, 46);
+  background-color: var(--dark-gray);
+  padding-left: 0.2em;
 }
 
 .pilot-list-pilots {
@@ -91,6 +104,19 @@ body {
   max-width: 700px;
 }
 
+.squad-panel-header {
+  font-size: 1.5em;
+  padding-bottom: 0.5em;
+}
+
+.squad-panel-points-total {
+
+}
+
+.squad-panel-points-total-over {
+  color: red;
+}
+
 .ship-card {
   border: solid 1px gray;
   margin-top: 10px;
@@ -101,9 +127,9 @@ body {
   border-bottom: solid 1px gray;
   padding: 5px;
   display: grid;
-  grid-template-columns: 3em 50% auto 3em;
+  grid-template-columns: 3em 55% auto 3em;
   font-size: 1.2em;
-  background-color: rgb(29, 29, 29);
+  background-color: var(--dark-gray);
 }
 
 .ship-card-initiative {
@@ -115,6 +141,12 @@ body {
 
 .ship-card-pilot-name {
   padding-left: 0.2em;
+  padding-right: 0.6em;
+}
+
+.ship-card-ship-type {
+  font-size: 0.6em;
+  color: lightgray;
 }
 
 .ship-card-point-cost {
@@ -151,7 +183,7 @@ body {
 }
 
 .ship-card-stats-force {
-  color: purple;
+  color: violet;
 }
 
 @font-face {

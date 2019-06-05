@@ -1,6 +1,5 @@
 [
-    {
-        "type": "T-65 X-Wing",
+    {   "type": "T-65 X-Wing",
         "pilots": [
             {
                 "faction": "Rebel Alliance",
@@ -53,6 +52,46 @@
                 "hull": 4,
                 "shields": 2,
                 "points": 43,
+                "actions": [
+                    { 
+                        "name": "focus",
+                        "difficulty": "white"
+                    },
+                    { 
+                        "name": "target_lock",
+                        "difficulty": "white"
+                    },
+                    { 
+                        "name": "barrel_roll",
+                        "difficulty": "white"
+                    }
+                ],
+                "upgrades": [
+                    {
+                        "type": "torpedo"
+                    },
+                    {
+                        "type": "astromech"
+                    },
+                    {
+                        "type": "modification"
+                    },
+                    {
+                        "type": "configuration"
+                    }
+                ]
+            },
+            {
+                "faction": "Rebel Alliance",
+                "type": "T-65 X-Wing",
+                "pilot": "•Biggs Darklighter",
+                "unique": true,
+                "initiative": 3,
+                "attack": 3,
+                "agility": 2,
+                "hull": 4,
+                "shields": 2,
+                "points": 48,
                 "actions": [
                     { 
                         "name": "focus",
@@ -171,8 +210,7 @@
             }
         ]
     },
-    {
-        "type": "BTL-A4 Y-Wing",
+    {   "type": "BTL-A4 Y-Wing",
         "pilots": [
             {
                 "faction": "Rebel Alliance",
@@ -280,6 +318,59 @@
             {
                 "faction": "Rebel Alliance",
                 "type": "BTL-A4 Y-Wing",
+                "pilot": "•Horton Salm",
+                "unique": true,
+                "initiative": 4,
+                "attack": 2,
+                "agility": 1,
+                "hull": 6,
+                "shields": 2,
+                "points": 37,
+                "actions": [
+                    { 
+                        "name": "focus",
+                        "difficulty": "white"
+                    },
+                    { 
+                        "name": "target_lock",
+                        "difficulty": "white"
+                    },
+                    { 
+                        "name": "barrel_roll",
+                        "difficulty": "red"
+                    },
+                    {
+                        "name": "reload",
+                        "difficulty": "red"
+                    }
+                ],
+                "upgrades": [
+                    {
+                        "type": "talent"
+                    },
+                    {
+                        "type": "turret"
+                    },
+                    {
+                        "type": "torpedo"
+                    },
+                    {
+                        "type": "astromech"
+                    },
+                    {
+                        "type": "device"
+                    },
+                    {
+                        "type": "modification"
+                    },
+                    {
+                        "type": "gunner"
+                    }
+                ]
+            },
+            {
+                "faction": "Rebel Alliance",
+                "type": "BTL-A4 Y-Wing",
                 "pilot": "•\"Dutch\" Vander",
                 "unique": true,
                 "initiative": 4,
@@ -327,6 +418,388 @@
                     },
                     {
                         "type": "gunner"
+                    }
+                ]
+            }
+        ]
+    },
+    {   "type": "RZ-1 A-Wing",
+        "pilots": [
+            {
+                "faction": "Rebel Alliance",
+                "type": "RZ-1 A-Wing",
+                "pilot": "Phoenix Squadron Pilot",
+                "unique": false,
+                "initiative": 1,
+                "attack": 2,
+                "agility": 3,
+                "hull": 2,
+                "shields": 2,
+                "points": 30,
+                "actions": [
+                    { 
+                        "name": "focus",
+                        "difficulty": "white"
+                    },
+                    { 
+                        "name": "evade",
+                        "difficulty": "white"
+                    },
+                    { 
+                        "name": "target_lock",
+                        "difficulty": "white"
+                    },
+                    { 
+                        "name": "barrel_roll",
+                        "difficulty": "white"
+                    },
+                    {
+                        "name": "boost",
+                        "difficulty": "white"
+                    }
+                ],
+                "upgrades": [
+                    {
+                        "type": "talent"
+                    },
+                    {
+                        "type": "missile"
+                    }
+                ]
+            },
+            {
+                "faction": "Rebel Alliance",
+                "type": "RZ-1 A-Wing",
+                "pilot": "Green Squadron Pilot",
+                "unique": false,
+                "initiative": 3,
+                "attack": 2,
+                "agility": 3,
+                "hull": 2,
+                "shields": 2,
+                "points": 32,
+                "actions": [
+                    { 
+                        "name": "focus",
+                        "difficulty": "white"
+                    },
+                    { 
+                        "name": "evade",
+                        "difficulty": "white"
+                    },
+                    { 
+                        "name": "target_lock",
+                        "difficulty": "white"
+                    },
+                    { 
+                        "name": "barrel_roll",
+                        "difficulty": "white"
+                    },
+                    {
+                        "name": "boost",
+                        "difficulty": "white"
+                    }
+                ],
+                "upgrades": [
+                    {
+                        "type": "talent"
+                    },
+                    {
+                        "type": "talent"
+                    },
+                    {
+                        "type": "missile"
+                    }
+                ]
+            },
+            {
+                "faction": "Rebel Alliance",
+                "type": "RZ-1 A-Wing",
+                "pilot": "•Arvel Crynyd",
+                "unique": true,
+                "initiative": 3,
+                "attack": 2,
+                "agility": 3,
+                "hull": 2,
+                "shields": 2,
+                "points": 34,
+                "actions": [
+                    { 
+                        "name": "focus",
+                        "difficulty": "white"
+                    },
+                    { 
+                        "name": "evade",
+                        "difficulty": "white"
+                    },
+                    { 
+                        "name": "target_lock",
+                        "difficulty": "white"
+                    },
+                    { 
+                        "name": "barrel_roll",
+                        "difficulty": "white"
+                    },
+                    {
+                        "name": "boost",
+                        "difficulty": "white"
+                    }
+                ],
+                "upgrades": [
+                    {
+                        "type": "talent"
+                    },
+                    {
+                        "type": "talent"
+                    },
+                    {
+                        "type": "missile"
+                    }
+                ]
+            },
+            {
+                "faction": "Rebel Alliance",
+                "type": "RZ-1 A-Wing",
+                "pilot": "•Jake Farrell",
+                "unique": true,
+                "initiative": 4,
+                "attack": 2,
+                "agility": 3,
+                "hull": 2,
+                "shields": 2,
+                "points": 36,
+                "actions": [
+                    { 
+                        "name": "focus",
+                        "difficulty": "white"
+                    },
+                    { 
+                        "name": "evade",
+                        "difficulty": "white"
+                    },
+                    { 
+                        "name": "target_lock",
+                        "difficulty": "white"
+                    },
+                    { 
+                        "name": "barrel_roll",
+                        "difficulty": "white"
+                    },
+                    {
+                        "name": "boost",
+                        "difficulty": "white"
+                    }
+                ],
+                "upgrades": [
+                    {
+                        "type": "talent"
+                    },
+                    {
+                        "type": "talent"
+                    },
+                    {
+                        "type": "missile"
+                    }
+                ]
+            }
+        ]
+    },
+    {   "type": "A/SF-01 B-Wing",
+        "pilots": [
+            {
+                "faction": "Rebel Alliance",
+                "type": "A/SF-01 B-Wing",
+                "pilot": "Blue Squadron Pilot",
+                "unique": false,
+                "initiative": 3,
+                "attack": 3,
+                "agility": 1,
+                "hull": 4,
+                "shields": 4,
+                "points": 41,
+                "actions": [
+                    { 
+                        "name": "focus",
+                        "difficulty": "white",
+                        "linkedAction": {
+                            "name": "barrel_roll",
+                            "difficulty": "red"
+                        }
+                    },
+                    { 
+                        "name": "target_lock",
+                        "difficulty": "white"
+                    },
+                    { 
+                        "name": "barrel_roll",
+                        "difficulty": "white"
+                    }
+                ],
+                "upgrades": [
+                    {
+                        "type": "sensor"
+                    },
+                    {
+                        "type": "cannon"
+                    },
+                    {
+                        "type": "cannon"
+                    },
+                    {
+                        "type": "torpedo"
+                    },
+                    {
+                        "type": "modification"
+                    }
+                ]
+            },
+            {
+                "faction": "Rebel Alliance",
+                "type": "A/SF-01 B-Wing",
+                "pilot": "Blade Squadron Veteran",
+                "unique": false,
+                "initiative": 3,
+                "attack": 3,
+                "agility": 1,
+                "hull": 4,
+                "shields": 4,
+                "points": 43,
+                "actions": [
+                    { 
+                        "name": "focus",
+                        "difficulty": "white",
+                        "linkedAction": {
+                            "name": "barrel_roll",
+                            "difficulty": "red"
+                        }
+                    },
+                    { 
+                        "name": "target_lock",
+                        "difficulty": "white"
+                    },
+                    { 
+                        "name": "barrel_roll",
+                        "difficulty": "white"
+                    }
+                ],
+                "upgrades": [
+                    {
+                        "type": "talent"
+                    },
+                    {
+                        "type": "sensor"
+                    },
+                    {
+                        "type": "cannon"
+                    },
+                    {
+                        "type": "cannon"
+                    },
+                    {
+                        "type": "torpedo"
+                    },
+                    {
+                        "type": "modification"
+                    }
+                ]
+            },
+            {
+                "faction": "Rebel Alliance",
+                "type": "A/SF-01 B-Wing",
+                "pilot": "•Ten Numb",
+                "unique": true,
+                "initiative": 4,
+                "attack": 3,
+                "agility": 1,
+                "hull": 4,
+                "shields": 4,
+                "points": 46,
+                "actions": [
+                    { 
+                        "name": "focus",
+                        "difficulty": "white",
+                        "linkedAction": {
+                            "name": "barrel_roll",
+                            "difficulty": "red"
+                        }
+                    },
+                    { 
+                        "name": "target_lock",
+                        "difficulty": "white"
+                    },
+                    { 
+                        "name": "barrel_roll",
+                        "difficulty": "white"
+                    }
+                ],
+                "upgrades": [
+                    {
+                        "type": "talent"
+                    },
+                    {
+                        "type": "sensor"
+                    },
+                    {
+                        "type": "cannon"
+                    },
+                    {
+                        "type": "cannon"
+                    },
+                    {
+                        "type": "torpedo"
+                    },
+                    {
+                        "type": "modification"
+                    }
+                ]
+            },
+            {
+                "faction": "Rebel Alliance",
+                "type": "A/SF-01 B-Wing",
+                "pilot": "•Braylen Stramm",
+                "unique": true,
+                "initiative": 4,
+                "attack": 3,
+                "agility": 1,
+                "hull": 4,
+                "shields": 4,
+                "points": 47,
+                "actions": [
+                    { 
+                        "name": "focus",
+                        "difficulty": "white",
+                        "linkedAction": {
+                            "name": "barrel_roll",
+                            "difficulty": "red"
+                        }
+                    },
+                    { 
+                        "name": "target_lock",
+                        "difficulty": "white"
+                    },
+                    { 
+                        "name": "barrel_roll",
+                        "difficulty": "white"
+                    }
+                ],
+                "upgrades": [
+                    {
+                        "type": "talent"
+                    },
+                    {
+                        "type": "sensor"
+                    },
+                    {
+                        "type": "cannon"
+                    },
+                    {
+                        "type": "cannon"
+                    },
+                    {
+                        "type": "torpedo"
+                    },
+                    {
+                        "type": "modification"
                     }
                 ]
             }
