@@ -3,8 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default class PilotListItem extends React.Component {
     render() {
-        const { pilot, onAddToSquad, active } = this.props;
-        return <div className={'pilot-list-item' + (active ? '' : ' disabled')}>
+        const { pilot, onAddToSquad, active, visible } = this.props;
+        const classes = 'pilot-list-item' 
+            + (active ? '' : ' disabled') 
+            + (visible ? '' : ' hidden');
+        return <div className={classes}>
             <div className="pilot-list-item-cost">
                 ({pilot.points})
                 <span className="pilot-list-item-add">

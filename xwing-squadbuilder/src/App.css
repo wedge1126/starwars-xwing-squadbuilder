@@ -32,18 +32,22 @@ body {
   color: rgb(80, 80, 80);
 }
 
+.hidden {
+  display: none;
+}
+
 .panel {
-  border: solid 1px var(--star-wars-yellow);
+  border: solid 3px var(--star-wars-yellow);
   border-radius: 15px;
   padding: 15px;
   height: calc(100vh - 100px);
 }
 
 .ships-panel {
-  width: calc(35% - 5px);
+  width: calc(35% - 10px);
   max-width: 350px;
   float: left;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .pilot-list {
@@ -53,7 +57,10 @@ body {
 .pilot-list-ship-type {
   font-style: italic;
   font-size: 1.1em;
-  color: darkgray;
+  display: grid;
+  grid-template-columns: auto 2em;
+  cursor: pointer;
+  background-color: rgb(46, 46, 46);
 }
 
 .pilot-list-pilots {
