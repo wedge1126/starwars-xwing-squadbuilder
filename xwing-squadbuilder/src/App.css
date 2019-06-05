@@ -24,6 +24,14 @@ body {
   font-size: 1.1em;
 }
 
+.button {
+  cursor: pointer;
+}
+
+.disabled {
+  color: rgb(80, 80, 80);
+}
+
 .panel {
   border: solid 1px var(--star-wars-yellow);
   border-radius: 15px;
@@ -78,8 +86,8 @@ body {
 
 .ship-card {
   border: solid 1px gray;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .ship-card-header {
@@ -88,6 +96,7 @@ body {
   display: grid;
   grid-template-columns: 3em 50% auto 3em;
   font-size: 1.2em;
+  background-color: rgb(29, 29, 29);
 }
 
 .ship-card-initiative {
@@ -111,7 +120,7 @@ body {
 }
 
 .ship-card-body {
-  padding: 5px;
+  padding: 10px;
 }
 
 .stat {

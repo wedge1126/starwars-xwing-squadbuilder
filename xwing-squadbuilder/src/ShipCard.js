@@ -4,7 +4,7 @@ import { faMeteor, faShare, faTh, faFutbol, faTimes } from '@fortawesome/free-so
 
 export default class ShipCard extends React.Component {
     render() {
-        const ship = this.props.ship;
+        const { ship, onRemoveFromSquad, idx } = this.props;
         return <div className="ship-card">
             <div className="ship-card-header">
                 <div className="ship-card-initiative">
@@ -17,7 +17,7 @@ export default class ShipCard extends React.Component {
                     ({ship.points})
                 </div>
                 <div className="ship-card-remove">
-                    <FontAwesomeIcon icon={faTimes} />
+                    <FontAwesomeIcon className="button" onClick={() => onRemoveFromSquad(idx)} icon={faTimes} />
                 </div>
             </div>
             <div className="ship-card-body">
