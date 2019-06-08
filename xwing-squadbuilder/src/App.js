@@ -24,7 +24,8 @@ export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      squadShips: []
+      squadShips: [],
+      squadName: ''
     };
   }
 
@@ -48,6 +49,12 @@ export default class App extends React.Component {
     });
   }
   
+  changeSquadName = (name) => {
+    this.setState({
+      squadName: name
+    });
+  }
+
   render() {
     return (
       <div className="App">
@@ -58,12 +65,13 @@ export default class App extends React.Component {
                 ships={rebelShips} 
                 selectedShips={this.state.squadShips} 
                 onAddToSquad={this.addToSquad} 
-                onRemoveFromSquad={this.removeFromSquad} 
+                onRemoveFromSquad={this.removeFromSquad}
+                onPrintSquad={this.printSquad} 
+                squadName={this.state.squadName}
+                onSquadNameChange={this.changeSquadName}
                 {...props} /> } 
               />
-            <Route exact path="/print" 
-              render={(props) => <PrintView />}
-              />
+            <Route exact path="/print" component={PrintView} />
           </Switch>
         </Router>
       </div>
@@ -72,10 +80,10 @@ export default class App extends React.Component {
 }
 
 function SquadBuilder(props) {
-  const { ships, selectedShips, onAddToSquad, onRemoveFromSquad } = props;
+  const { ships, selectedShips, onAddToSquad, onRemoveFromSquad, squadName, onSquadNameChange } = props;
   return <div className="squad-builder">
     <h1>X-Wing Squad Builder</h1>
     <ShipsPanel ships={ships} selectedShips={selectedShips} onAddToSquad={onAddToSquad} />
-    <SquadPanel selectedShips={selectedShips} onRemoveFromSquad={onRemoveFromSquad} />
+    <SquadPanel selectedShips={selectedShips} onRemoveFromSquad={onRemoveFromSquad} squadName={squadName} onSquadNameChange={onSquadNameChange}/>
   </div>;
 };
