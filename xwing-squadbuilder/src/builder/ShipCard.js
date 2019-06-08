@@ -27,21 +27,26 @@ export default class ShipCard extends React.Component {
             </div>
             <div className="ship-card-body">
                 <div className="ship-card-stats">
-                    <span className="stat stats-attack">
+                    <span className="stat stats-attack tooltip">
                         <FontAwesomeIcon icon={faMeteor} /> {ship.attack}
+                        <span class="tooltiptext">Attack</span>
                     </span>
-                    <span className="stat stats-agility">
+                    <span className="stat stats-agility tooltip">
                         <FontAwesomeIcon icon={faShare} /> {ship.agility}
+                        <span class="tooltiptext">Agility</span>
                     </span>
-                    <span className="stat stats-hull">
+                    <span className="stat stats-hull tooltip">
                         <FontAwesomeIcon icon={faTh} /> {ship.hull}
+                        <span class="tooltiptext">Hull</span>
                     </span>
-                    <span className="stat stats-shields">
+                    <span className="stat stats-shields tooltip">
                         <FontAwesomeIcon icon={faFutbol} /> {ship.shields}
+                        <span class="tooltiptext">Shields</span>
                     </span>
                     {ship.force && 
-                        <span className="stat stats-force">
+                        <span className="stat stats-force tooltip">
                             <FontAwesomeIcon icon={faJedi} /> {ship.force}
+                            <span class="tooltiptext">Force</span>
                         </span> 
                     }
                 </div>
