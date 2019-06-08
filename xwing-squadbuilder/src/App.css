@@ -54,6 +54,11 @@ body {
   margin-right: 10px;
 }
 
+.ships-panel-pilot-list {
+  height: 100%;
+  overflow: auto;
+}
+
 .pilot-list {
   padding-bottom: 0.5em;
 }
@@ -126,6 +131,12 @@ body {
 
 .squad-panel-points-total-over {
   color: red;
+}
+
+.squad-panel-ship-list {
+  height: calc(100% - 4.5em);
+  overflow: auto;
+  
 }
 
 .ship-card {
