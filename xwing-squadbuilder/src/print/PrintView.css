@@ -1,0 +1,56 @@
+.printer-friendly {
+    background-color: initial;
+    color: initial;
+}
+
+.print-view {
+    margin: auto;
+    max-width: 800px;
+}
+
+h1.print-view-squad-name {
+    margin-bottom: 0px;
+}
+
+.print-view-ship-list {
+    padding-top: 1em;
+}
+
+.print-ship-card {
+    display: grid;
+    grid-template-columns: 3em auto;
+    margin-bottom: 2em;
+}
+
+.print-ship-card:last-child {
+    margin-bottom: 0px;
+}
+
+.print-ship-initiative {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    font-size: 2em;
+    text-align: center;
+}
+
+.print-ship-header {
+    display: grid;
+    grid-template-columns: auto 5em;
+    font-size: 1.1em;
+}
+
+.print-ship-pilot-name {
+    padding-right: 1em;
+}
+
+.print-ship-ship-type {
+    padding-left: 1em;
+}
+
+.print-ship-point-cost {
+
+}
+
+.print-ship-body {
+
+}

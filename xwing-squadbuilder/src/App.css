@@ -12,7 +12,7 @@
   margin: 20px;
 }
 
-h1 {
+h1.squad-builder-header {
   /* font-family: 'StarJedi Special Edition'; */
   font-family: 'Distant Galaxy';
   color: var(--star-wars-yellow);
@@ -134,9 +134,14 @@ body {
 }
 
 .squad-panel-ship-list {
-  height: calc(100% - 4.5em);
+  height: calc(100% - 5em);
   overflow: auto;
-  
+}
+
+@media only screen and (max-width: 1083.5px) {
+  .squad-panel-ship-list {
+    height: calc(100% - 7em);
+  }
 }
 
 .ship-card {
@@ -155,7 +160,6 @@ body {
 }
 
 .ship-card-initiative {
-  color: orange;
   font-weight: bold;
   text-align: center;
   font-size: 1.1em;
@@ -188,23 +192,27 @@ body {
   padding-right: 1em;
 }
 
-.ship-card-stats-attack {
+.stats-initiative {
+  color: orange;
+}
+
+.stats-attack {
   color: firebrick;
 }
 
-.ship-card-stats-agility {
+.stats-agility {
   color: forestgreen;
 }
 
-.ship-card-stats-hull {
+.stats-hull {
   color: gold;
 }
 
-.ship-card-stats-shields {
+.stats-shields {
   color: skyblue;
 }
 
-.ship-card-stats-force {
+.stats-force {
   color: violet;
 }
 

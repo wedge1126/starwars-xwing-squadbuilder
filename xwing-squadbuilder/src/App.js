@@ -14,9 +14,9 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import rebelShips from './data/rebel-ships.json'
-import ShipsPanel from './ShipsPanel';
-import SquadPanel from './SquadPanel';
-import PrintView from './PrintView';
+import ShipsPanel from './builder/ShipsPanel';
+import SquadPanel from './builder/SquadPanel';
+import PrintView from './print/PrintView';
 
 library.add(faPlus, faMeteor, faShare, faTh, faFutbol, faJedi, faTimes, faAngleUp, faAngleDown);
 
@@ -82,7 +82,7 @@ export default class App extends React.Component {
 function SquadBuilder(props) {
   const { ships, selectedShips, onAddToSquad, onRemoveFromSquad, squadName, onSquadNameChange } = props;
   return <div className="squad-builder">
-    <h1>X-Wing Squad Builder</h1>
+    <h1 className="squad-builder-header">X-Wing Squad Builder</h1>
     <ShipsPanel ships={ships} selectedShips={selectedShips} onAddToSquad={onAddToSquad} />
     <SquadPanel selectedShips={selectedShips} onRemoveFromSquad={onRemoveFromSquad} squadName={squadName} onSquadNameChange={onSquadNameChange}/>
   </div>;

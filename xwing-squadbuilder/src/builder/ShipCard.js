@@ -7,7 +7,7 @@ export default class ShipCard extends React.Component {
         const { ship, onRemoveFromSquad, idx } = this.props;
         return <div className="ship-card">
             <div className="ship-card-header">
-                <div className="ship-card-initiative">
+                <div className="stats-initiative ship-card-initiative">
                     {ship.initiative}
                 </div>
                 <div>
@@ -27,20 +27,20 @@ export default class ShipCard extends React.Component {
             </div>
             <div className="ship-card-body">
                 <div className="ship-card-stats">
-                    <span className="stat ship-card-stats-attack">
+                    <span className="stat stats-attack">
                         <FontAwesomeIcon icon={faMeteor} /> {ship.attack}
                     </span>
-                    <span className="stat ship-card-stats-agility">
+                    <span className="stat stats-agility">
                         <FontAwesomeIcon icon={faShare} /> {ship.agility}
                     </span>
-                    <span className="stat ship-card-stats-hull">
+                    <span className="stat stats-hull">
                         <FontAwesomeIcon icon={faTh} /> {ship.hull}
                     </span>
-                    <span className="stat ship-card-stats-shields">
+                    <span className="stat stats-shields">
                         <FontAwesomeIcon icon={faFutbol} /> {ship.shields}
                     </span>
                     {ship.force && 
-                        <span className="stat ship-card-stats-force">
+                        <span className="stat stats-force">
                             <FontAwesomeIcon icon={faJedi} /> {ship.force}
                         </span> 
                     }
