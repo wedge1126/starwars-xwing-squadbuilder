@@ -8,9 +8,8 @@
   --dark-gray: rgb(45,45,45);
 }
 
-.App {
+.squad-builder {
   margin: 20px;
-  
 }
 
 h1 {
@@ -23,13 +22,6 @@ body {
   background-color: black;
   color: white;
   font-size: 1.1em;
-}
-
-input {
-  background-color: var(--dark-gray);
-  color: white;
-  border-style: none;
-  font-size: inherit;
 }
 
 .label {
@@ -107,6 +99,25 @@ input {
 .squad-panel-header {
   font-size: 1.5em;
   padding-bottom: 0.5em;
+}
+
+.squad-panel-header-print-button {
+  float: right;
+  margin-top: 0.2em;
+  margin-right: 0.2em;
+  padding: 0.5em;
+  border-color: gray;
+  border-radius: 15px;
+  background-color: lightcoral;
+  text-decoration: none;
+  color: initial;
+}
+
+.squad-panel-header-name-input {
+  background-color: var(--dark-gray);
+  color: white;
+  border-style: none;
+  font-size: inherit;
 }
 
 .squad-panel-points-total {

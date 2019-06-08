@@ -1,19 +1,21 @@
 import React from 'react';
-import ShipCard from './ShipCard'
+import { Link } from 'react-router-dom';
+import ShipCard from './ShipCard';
 
 export default class SquadPanel extends React.Component {
     render() {
-        const { ships, onRemoveFromSquad } = this.props;
-        const shipCards = ships.map((ship, i) => <ShipCard ship={ship} onRemoveFromSquad={onRemoveFromSquad} idx={i} key={i} />);
-        const pointTotal = ships.reduce((total, ship) => total + ship.points, 0);
+        const { selectedShips, onRemoveFromSquad } = this.props;
+        const shipCards = selectedShips.map((ship, i) => <ShipCard ship={ship} onRemoveFromSquad={onRemoveFromSquad} idx={i} key={i} />);
+        const pointTotal = selectedShips.reduce((total, ship) => total + ship.points, 0);
         const pointsClasses = 'squad-panel-points' 
             + (pointTotal > 200 ? ' squad-panel-points-total-over' : '');
 
         return <div className="panel squad-panel">
             <div className="squad-panel-header">
+                <Link className="squad-panel-header-print-button button" to={'/print'}>Print View</Link>
                 <div className="squad-panel-name">
                     <span className="label">Squad Name:</span>
-                    <input type="text" name="squad-name" />
+                    <input className="squad-panel-header-name-input" type="text" name="squad-name" />
                 </div>
                 <div className={pointsClasses}>
                     <span className="label">Squad Points: </span>

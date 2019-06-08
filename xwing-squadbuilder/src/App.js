@@ -12,9 +12,11 @@ import {
   faAngleUp,
   faAngleDown
 } from '@fortawesome/free-solid-svg-icons';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import rebelShips from './data/rebel-ships.json'
 import ShipsPanel from './ShipsPanel';
 import SquadPanel from './SquadPanel';
+import PrintView from './PrintView';
 
 library.add(faPlus, faMeteor, faShare, faTh, faFutbol, faJedi, faTimes, faAngleUp, faAngleDown);
 
@@ -49,10 +51,31 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>X-Wing Squad Builder</h1>
-        <ShipsPanel ships={rebelShips} selectedShips={this.state.squadShips} onAddToSquad={this.addToSquad} />
-        <SquadPanel ships={this.state.squadShips} onRemoveFromSquad={this.removeFromSquad} />
+        <Router>
+          <Switch>
+            <Route exact path="/"
+              render={(props) => <SquadBuilder 
+                ships={rebelShips} 
+                selectedShips={this.state.squadShips} 
+                onAddToSquad={this.addToSquad} 
+                onRemoveFromSquad={this.removeFromSquad} 
+                {...props} /> } 
+              />
+            <Route exact path="/print" 
+              render={(props) => <PrintView />}
+              />
+          </Switch>
+        </Router>
       </div>
     );
   }
 }
+
+function SquadBuilder(props) {
+  const { ships, selectedShips, onAddToSquad, onRemoveFromSquad } = props;
+  return <div className="squad-builder">
+    <h1>X-Wing Squad Builder</h1>
+    <ShipsPanel ships={ships} selectedShips={selectedShips} onAddToSquad={onAddToSquad} />
+    <SquadPanel selectedShips={selectedShips} onRemoveFromSquad={onRemoveFromSquad} />
+  </div>;
+};
