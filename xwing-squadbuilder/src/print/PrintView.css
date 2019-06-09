@@ -40,11 +40,11 @@ h1.print-view-squad-name {
 }
 
 .print-ship-pilot-name {
-    padding-right: 1em;
+    padding-right: 0.5em;
 }
 
 .print-ship-ship-type {
-    padding-left: 1em;
+    padding-left: 0.5em;
 }
 
 .print-ship-point-cost {

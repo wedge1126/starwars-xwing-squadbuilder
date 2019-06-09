@@ -84,6 +84,92 @@
             {
                 "faction": "Rebel Alliance",
                 "type": "T-65 X-Wing",
+                "pilot": "•Jek Porkins",
+                "unique": true,
+                "initiative": 4,
+                "attack": 3,
+                "agility": 2,
+                "hull": 4,
+                "shields": 2,
+                "points": 46,
+                "actions": [
+                    { 
+                        "name": "focus",
+                        "difficulty": "white"
+                    },
+                    { 
+                        "name": "target_lock",
+                        "difficulty": "white"
+                    },
+                    { 
+                        "name": "barrel_roll",
+                        "difficulty": "white"
+                    }
+                ],
+                "upgrades": [
+                    {
+                        "type": "talent"
+                    },
+                    {
+                        "type": "torpedo"
+                    },
+                    {
+                        "type": "astromech"
+                    },
+                    {
+                        "type": "modification"
+                    },
+                    {
+                        "type": "configuration"
+                    }
+                ]
+            },
+            {
+                "faction": "Rebel Alliance",
+                "type": "T-65 X-Wing",
+                "pilot": "•Garven Dreis",
+                "unique": true,
+                "initiative": 4,
+                "attack": 3,
+                "agility": 2,
+                "hull": 4,
+                "shields": 2,
+                "points": 47,
+                "actions": [
+                    { 
+                        "name": "focus",
+                        "difficulty": "white"
+                    },
+                    { 
+                        "name": "target_lock",
+                        "difficulty": "white"
+                    },
+                    { 
+                        "name": "barrel_roll",
+                        "difficulty": "white"
+                    }
+                ],
+                "upgrades": [
+                    {
+                        "type": "talent"
+                    },
+                    {
+                        "type": "torpedo"
+                    },
+                    {
+                        "type": "astromech"
+                    },
+                    {
+                        "type": "modification"
+                    },
+                    {
+                        "type": "configuration"
+                    }
+                ]
+            },
+            {
+                "faction": "Rebel Alliance",
+                "type": "T-65 X-Wing",
                 "pilot": "•Biggs Darklighter",
                 "unique": true,
                 "initiative": 3,
@@ -318,6 +404,59 @@
             {
                 "faction": "Rebel Alliance",
                 "type": "BTL-A4 Y-Wing",
+                "pilot": "•Evaan Verlaine",
+                "unique": true,
+                "initiative": 3,
+                "attack": 2,
+                "agility": 1,
+                "hull": 6,
+                "shields": 2,
+                "points": 35,
+                "actions": [
+                    { 
+                        "name": "focus",
+                        "difficulty": "white"
+                    },
+                    { 
+                        "name": "target_lock",
+                        "difficulty": "white"
+                    },
+                    { 
+                        "name": "barrel_roll",
+                        "difficulty": "red"
+                    },
+                    {
+                        "name": "reload",
+                        "difficulty": "red"
+                    }
+                ],
+                "upgrades": [
+                    {
+                        "type": "talent"
+                    },
+                    {
+                        "type": "turret"
+                    },
+                    {
+                        "type": "torpedo"
+                    },
+                    {
+                        "type": "astromech"
+                    },
+                    {
+                        "type": "device"
+                    },
+                    {
+                        "type": "modification"
+                    },
+                    {
+                        "type": "gunner"
+                    }
+                ]
+            },
+            {
+                "faction": "Rebel Alliance",
+                "type": "BTL-A4 Y-Wing",
                 "pilot": "•Horton Salm",
                 "unique": true,
                 "initiative": 4,
@@ -379,6 +518,59 @@
                 "hull": 6,
                 "shields": 2,
                 "points": 39,
+                "actions": [
+                    { 
+                        "name": "focus",
+                        "difficulty": "white"
+                    },
+                    { 
+                        "name": "target_lock",
+                        "difficulty": "white"
+                    },
+                    { 
+                        "name": "barrel_roll",
+                        "difficulty": "red"
+                    },
+                    {
+                        "name": "reload",
+                        "difficulty": "red"
+                    }
+                ],
+                "upgrades": [
+                    {
+                        "type": "talent"
+                    },
+                    {
+                        "type": "turret"
+                    },
+                    {
+                        "type": "torpedo"
+                    },
+                    {
+                        "type": "astromech"
+                    },
+                    {
+                        "type": "device"
+                    },
+                    {
+                        "type": "modification"
+                    },
+                    {
+                        "type": "gunner"
+                    }
+                ]
+            },
+            {
+                "faction": "Rebel Alliance",
+                "type": "BTL-A4 Y-Wing",
+                "pilot": "•Norra Wexley",
+                "unique": true,
+                "initiative": 5,
+                "attack": 2,
+                "agility": 1,
+                "hull": 6,
+                "shields": 2,
+                "points": 41,
                 "actions": [
                     { 
                         "name": "focus",
