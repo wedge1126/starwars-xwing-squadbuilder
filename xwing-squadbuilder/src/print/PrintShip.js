@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMeteor, faShare, faTh, faFutbol, faJedi } from '@fortawesome/free-solid-svg-icons';
 
@@ -47,3 +48,17 @@ export default class PrintShip extends React.Component {
         </div>
     }
 }
+
+PrintShip.propTypes = {
+    ship: PropTypes.shape({
+        initiative: PropTypes.number.isRequired,
+        pilot: PropTypes.string.isRequired,
+        type: PropTypes.string.isRequired,
+        points: PropTypes.number.isRequired,
+        attack: PropTypes.number.isRequired,
+        agility: PropTypes.number.isRequired,
+        hull: PropTypes.number.isRequired,
+        shields: PropTypes.number.isRequired,
+        force: PropTypes.number
+    }).isRequired
+};

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './PrintView.css';
 import PrintShip from './PrintShip';
 
@@ -21,3 +22,23 @@ export default class PrintView extends React.Component {
         document.body.classList.remove('printer-friendly');
     }
 }
+
+PrintView.propTypes = {
+    location: PropTypes.shape({
+        state: PropTypes.shape({
+            squadName: PropTypes.string,
+            pointTotal: PropTypes.number.isRequired,
+            selectedShips: PropTypes.arrayOf(PropTypes.shape({
+                initiative: PropTypes.number.isRequired,
+                pilot: PropTypes.string.isRequired,
+                type: PropTypes.string.isRequired,
+                points: PropTypes.number.isRequired,
+                attack: PropTypes.number.isRequired,
+                agility: PropTypes.number.isRequired,
+                hull: PropTypes.number.isRequired,
+                shields: PropTypes.number.isRequired,
+                force: PropTypes.number
+            })).isRequired
+        })
+    })
+};

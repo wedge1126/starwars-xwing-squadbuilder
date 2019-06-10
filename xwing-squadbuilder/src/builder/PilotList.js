@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import PilotListItem from './PilotListItem';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleUp, faAngleDown } from '@fortawesome/free-solid-svg-icons';
@@ -32,3 +33,30 @@ export default class PilotList extends React.Component {
         </div>
     }
 }
+
+PilotList.propTypes = {
+    shiptype: PropTypes.shape({
+        type: PropTypes.string.isRequired,
+        pilots: PropTypes.arrayOf(
+            PropTypes.shape({
+                pilot: PropTypes.string.isRequired,
+                points: PropTypes.number.isRequired,
+                type: PropTypes.string.isRequired
+            })
+        ).isRequired
+    }),
+    onAddToSquad: PropTypes.func.isRequired,
+    selectedShips: PropTypes.arrayOf(
+        PropTypes.shape({
+            initiative: PropTypes.number.isRequired,
+            pilot: PropTypes.string.isRequired,
+            type: PropTypes.string.isRequired,
+            points: PropTypes.number.isRequired,
+            attack: PropTypes.number.isRequired,
+            agility: PropTypes.number.isRequired,
+            hull: PropTypes.number.isRequired,
+            shields: PropTypes.number.isRequired,
+            force: PropTypes.number
+        })
+    )
+};

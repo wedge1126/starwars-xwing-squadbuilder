@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default class PilotListItem extends React.Component {
@@ -18,3 +19,13 @@ export default class PilotListItem extends React.Component {
         </div>
     }
 }
+
+PilotListItem.propTypes = {
+    pilot: PropTypes.shape({
+        pilot: PropTypes.string.isRequired,
+        points: PropTypes.number.isRequired,
+    }).isRequired,
+    onAddToSquad: PropTypes.func.isRequired,
+    active: PropTypes.bool.isRequired,
+    visible: PropTypes.bool.isRequired
+};

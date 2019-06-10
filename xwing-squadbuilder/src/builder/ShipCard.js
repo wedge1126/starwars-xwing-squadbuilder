@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMeteor, faShare, faTh, faFutbol, faTimes, faJedi } from '@fortawesome/free-solid-svg-icons';
 
@@ -29,24 +30,24 @@ export default class ShipCard extends React.Component {
                 <div className="ship-card-stats">
                     <span className="stat stats-attack tooltip">
                         <FontAwesomeIcon icon={faMeteor} /> {ship.attack}
-                        <span class="tooltiptext">Attack</span>
+                        <span className="tooltiptext">Attack</span>
                     </span>
                     <span className="stat stats-agility tooltip">
                         <FontAwesomeIcon icon={faShare} /> {ship.agility}
-                        <span class="tooltiptext">Agility</span>
+                        <span className="tooltiptext">Agility</span>
                     </span>
                     <span className="stat stats-hull tooltip">
                         <FontAwesomeIcon icon={faTh} /> {ship.hull}
-                        <span class="tooltiptext">Hull</span>
+                        <span className="tooltiptext">Hull</span>
                     </span>
                     <span className="stat stats-shields tooltip">
                         <FontAwesomeIcon icon={faFutbol} /> {ship.shields}
-                        <span class="tooltiptext">Shields</span>
+                        <span className="tooltiptext">Shields</span>
                     </span>
                     {ship.force && 
                         <span className="stat stats-force tooltip">
                             <FontAwesomeIcon icon={faJedi} /> {ship.force}
-                            <span class="tooltiptext">Force</span>
+                            <span className="tooltiptext">Force</span>
                         </span> 
                     }
                 </div>
@@ -54,3 +55,19 @@ export default class ShipCard extends React.Component {
         </div>
     }
 }
+
+ShipCard.propTypes = {
+    ship: PropTypes.shape({
+        initiative: PropTypes.number.isRequired,
+        pilot: PropTypes.string.isRequired,
+        type: PropTypes.string.isRequired,
+        points: PropTypes.number.isRequired,
+        attack: PropTypes.number.isRequired,
+        agility: PropTypes.number.isRequired,
+        hull: PropTypes.number.isRequired,
+        shields: PropTypes.number.isRequired,
+        force: PropTypes.number
+    }).isRequired,
+    onRemoveFromSquad: PropTypes.func.isRequired,
+    idx: PropTypes.number.isRequired
+};

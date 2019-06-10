@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import ShipCard from './ShipCard';
 
@@ -47,3 +48,19 @@ export default class SquadPanel extends React.Component {
         </div>
     }
 }
+
+SquadPanel.propTypes = {
+    selectedShips: PropTypes.arrayOf(PropTypes.shape({
+        initiative: PropTypes.number.isRequired,
+        pilot: PropTypes.string.isRequired,
+        type: PropTypes.string.isRequired,
+        points: PropTypes.number.isRequired,
+        attack: PropTypes.number.isRequired,
+        agility: PropTypes.number.isRequired,
+        hull: PropTypes.number.isRequired,
+        shields: PropTypes.number.isRequired,
+        force: PropTypes.number
+    })).isRequired,
+    onRemoveFromSquad: PropTypes.func.isRequired,
+    squadName: PropTypes.string
+};
